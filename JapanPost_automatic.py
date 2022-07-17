@@ -78,7 +78,7 @@ def Generate_Link_list(url, file_name):
 
 def Generate_status_list(url_list):
     status_list = []
-    for i in tqdm(range(len(url_list)), desc = "生成Excel"):
+    for i in tqdm(range(len(url_list)), desc = "查询单号状态"):
         status_list.append(parse_content(url_list[i]))
     return status_list
 
